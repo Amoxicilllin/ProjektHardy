@@ -1,0 +1,12 @@
+E:\projekt\RosenStengel\RosenStengel\bin\Debug\RosenStengel.exe.config
+E:\projekt\RosenStengel\RosenStengel\bin\Debug\RosenStengel.exe
+E:\projekt\RosenStengel\RosenStengel\bin\Debug\RosenStengel.pdb
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.csprojResolveAssemblyReference.cache
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.Haupt.resources
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.Properties.Resources.resources
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.Welcome.resources
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.csproj.GenerateResource.Cache
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.exe
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.pdb
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.Kontakt.resources
+E:\projekt\RosenStengel\RosenStengel\obj\Debug\RosenStengel.Termin.resources
