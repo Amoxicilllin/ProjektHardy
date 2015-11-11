@@ -45,7 +45,14 @@
             this.cbBearbeiten = new System.Windows.Forms.CheckBox();
             this.cbloeschen = new System.Windows.Forms.CheckBox();
             this.btnSpeichern = new System.Windows.Forms.Button();
+            this.lbname = new System.Windows.Forms.Label();
+            this.lbVorname = new System.Windows.Forms.Label();
+            this.lbAdresse = new System.Windows.Forms.Label();
+            this.lbTelefon = new System.Windows.Forms.Label();
+            this.lbEMail = new System.Windows.Forms.Label();
+            this.pbBild = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBild)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -174,6 +181,7 @@
             this.cbNeu.TabIndex = 8;
             this.cbNeu.Text = "neuen Satz anlegen";
             this.cbNeu.UseVisualStyleBackColor = true;
+            this.cbNeu.CheckedChanged += new System.EventHandler(this.cbNeu_CheckedChanged);
             // 
             // cbBearbeiten
             // 
@@ -206,11 +214,75 @@
             this.btnSpeichern.UseVisualStyleBackColor = true;
             this.btnSpeichern.Click += new System.EventHandler(this.btnSpeichern_Click);
             // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbname.Location = new System.Drawing.Point(136, 242);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(40, 20);
+            this.lbname.TabIndex = 12;
+            this.lbname.Text = "Test";
+            // 
+            // lbVorname
+            // 
+            this.lbVorname.AutoSize = true;
+            this.lbVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVorname.Location = new System.Drawing.Point(136, 293);
+            this.lbVorname.Name = "lbVorname";
+            this.lbVorname.Size = new System.Drawing.Size(40, 20);
+            this.lbVorname.TabIndex = 13;
+            this.lbVorname.Text = "Test";
+            // 
+            // lbAdresse
+            // 
+            this.lbAdresse.AutoSize = true;
+            this.lbAdresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAdresse.Location = new System.Drawing.Point(136, 352);
+            this.lbAdresse.Name = "lbAdresse";
+            this.lbAdresse.Size = new System.Drawing.Size(40, 20);
+            this.lbAdresse.TabIndex = 14;
+            this.lbAdresse.Text = "Test";
+            // 
+            // lbTelefon
+            // 
+            this.lbTelefon.AutoSize = true;
+            this.lbTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTelefon.Location = new System.Drawing.Point(407, 242);
+            this.lbTelefon.Name = "lbTelefon";
+            this.lbTelefon.Size = new System.Drawing.Size(40, 20);
+            this.lbTelefon.TabIndex = 15;
+            this.lbTelefon.Text = "Test";
+            // 
+            // lbEMail
+            // 
+            this.lbEMail.AutoSize = true;
+            this.lbEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEMail.Location = new System.Drawing.Point(407, 293);
+            this.lbEMail.Name = "lbEMail";
+            this.lbEMail.Size = new System.Drawing.Size(40, 20);
+            this.lbEMail.TabIndex = 16;
+            this.lbEMail.Text = "Test";
+            // 
+            // pbBild
+            // 
+            this.pbBild.Location = new System.Drawing.Point(411, 352);
+            this.pbBild.Name = "pbBild";
+            this.pbBild.Size = new System.Drawing.Size(149, 80);
+            this.pbBild.TabIndex = 17;
+            this.pbBild.TabStop = false;
+            // 
             // Kontakt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 553);
+            this.Controls.Add(this.pbBild);
+            this.Controls.Add(this.lbEMail);
+            this.Controls.Add(this.lbTelefon);
+            this.Controls.Add(this.lbAdresse);
+            this.Controls.Add(this.lbVorname);
+            this.Controls.Add(this.lbname);
             this.Controls.Add(this.btnSpeichern);
             this.Controls.Add(this.cbloeschen);
             this.Controls.Add(this.cbBearbeiten);
@@ -227,6 +299,7 @@
             this.Text = "Kontakt";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Kontakt_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBild)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,5 +324,11 @@
         private System.Windows.Forms.CheckBox cbBearbeiten;
         private System.Windows.Forms.CheckBox cbloeschen;
         private System.Windows.Forms.Button btnSpeichern;
+        private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Label lbVorname;
+        private System.Windows.Forms.Label lbAdresse;
+        private System.Windows.Forms.Label lbTelefon;
+        private System.Windows.Forms.Label lbEMail;
+        private System.Windows.Forms.PictureBox pbBild;
     }
 }

@@ -53,5 +53,18 @@ namespace RosenStengel
                 }
             }
         }
+
+        private void cbNeu_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbNeu.Checked == true)
+            { 
+                lbname.Text = " ";
+                lbVorname.Text = " ";
+                lbTelefon.Text = " ";
+                lbEMail.Text = " ";
+                lbAdresse.Text = " ";
+                
+            }
+        }
     }
 }
