@@ -77,6 +77,7 @@
             this.Name = "Haupt";
             this.Text = "Haupt";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Haupt_FormClosing);
+            this.Load += new System.EventHandler(this.Haupt_Load);
             this.ResumeLayout(false);
 
         }

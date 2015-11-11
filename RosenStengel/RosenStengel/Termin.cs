@@ -19,8 +19,16 @@ namespace RosenStengel
 
         private void Termin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Haupt HFrm = new Haupt();
-            HFrm.Show();
+            if (Program.frmHaupt == null)
+            {
+                Haupt frmHaupt = new Haupt();
+                Program.frmHaupt = frmHaupt;
+                frmHaupt.Show();
+            }
+            else
+            {
+                Program.frmHaupt.Show();
+            }
         }
     }
 }

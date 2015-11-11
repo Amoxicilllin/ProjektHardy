@@ -19,8 +19,39 @@ namespace RosenStengel
 
         private void Kontakt_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Haupt HFrm = new Haupt();
-            HFrm.Show();
+            if (Program.frmHaupt == null)
+            {
+                Haupt frmHaupt = new Haupt();
+                Program.frmHaupt = frmHaupt;
+                frmHaupt.Show();
+            }
+            else
+            {
+                Program.frmHaupt.Show();
+            }
+        }
+
+        private void btnSpeichern_Click(object sender, EventArgs e)
+        {
+            if ((cbBearbeiten.Checked == true && cbloeschen.Checked == true) || (cbNeu.Checked == true && cbBearbeiten.Checked == true) || (cbNeu.Checked == true && cbloeschen.Checked == true))
+            {
+                MessageBox.Show("Du kannst nicht mehrere Sachen auswählen", "Fehler");
+            }
+            else
+            {
+                if (cbNeu.Checked == true)
+                {
+                    MessageBox.Show("Neuer Satz wurde angelegt", "Info");
+                }
+                else if (cbBearbeiten.Checked == true)
+                {
+                    MessageBox.Show("Der Satz wurde bearbeitet","Info");
+                }
+                else if (cbloeschen.Checked == true)
+                {
+                    MessageBox.Show("Der Satz wurde gelöscht!","Info");
+                }
+            }
         }
     }
 }

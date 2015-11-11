@@ -41,5 +41,10 @@ namespace RosenStengel
             Application.Exit();
         }
 
+        private void Haupt_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

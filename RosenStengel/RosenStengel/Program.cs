@@ -8,6 +8,8 @@ namespace RosenStengel
 {
     static class Program
     {
+        public static Haupt frmHaupt;
+ 
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>

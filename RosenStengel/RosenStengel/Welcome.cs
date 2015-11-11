@@ -19,8 +19,8 @@ namespace RosenStengel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Haupt HFrm = new Haupt();
-            HFrm.Show();
+            Haupt frmHaupt = new Haupt();
+            frmHaupt.Show();
 
             this.Hide();
         }
