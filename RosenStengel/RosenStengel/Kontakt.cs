@@ -31,39 +31,55 @@ namespace RosenStengel
             }
         }
 
-        private void btnSpeichern_Click(object sender, EventArgs e)
+        private void cbNeu_CheckedChanged(object sender, EventArgs e)
         {
-            if ((cbBearbeiten.Checked == true && cbloeschen.Checked == true) || (cbNeu.Checked == true && cbBearbeiten.Checked == true) || (cbNeu.Checked == true && cbloeschen.Checked == true))
+            if ((cbNeu.Checked == true && cbBearbeiten.Checked == true) || (cbNeu.Checked == true && cbLoeschen.Checked == true) )
             {
-                MessageBox.Show("Du kannst nicht mehrere Sachen auswählen", "Fehler");
+                MessageBox.Show("Sie können nur einen Aktion auswählen","Information");
             }
-            else
-            {
                 if (cbNeu.Checked == true)
-                {
-                    MessageBox.Show("Neuer Satz wurde angelegt", "Info");
-                }
-                else if (cbBearbeiten.Checked == true)
-                {
-                    MessageBox.Show("Der Satz wurde bearbeitet","Info");
-                }
-                else if (cbloeschen.Checked == true)
-                {
-                    MessageBox.Show("Der Satz wurde gelöscht!","Info");
-                }
+            {
+                tbAdresse.Text = " ";
+                tbEmail.Text = " ";
+                tbName.Text = " ";
+                tbTelefon.Text = " ";
+                tbVorname.Text = " ";
             }
         }
 
-        private void cbNeu_CheckedChanged(object sender, EventArgs e)
+        private void btSave_Click(object sender, EventArgs e)
         {
+            if ((cbLoeschen.Checked == true && cbBearbeiten.Checked == true) || (cbBearbeiten.Checked == true && cbLoeschen.Checked == true) || (cbNeu.Checked == true && cbBearbeiten.Checked == true))
+            {
+                MessageBox.Show("Sie können nur einen Aktion auswählen", "Information");   
+            }
             if (cbNeu.Checked == true)
-            { 
-                lbname.Text = " ";
-                lbVorname.Text = " ";
-                lbTelefon.Text = " ";
-                lbEMail.Text = " ";
-                lbAdresse.Text = " ";
-                
+            {
+                MessageBox.Show("Der Satz wurde angelegt!");
+            }
+            else if (cbBearbeiten.Checked == true)
+            {
+                MessageBox.Show("Der Satz wurde bearbeitet!");
+            }
+            else if (cbLoeschen.Checked == true)
+            {
+                MessageBox.Show("Der Satz wurde gelöscht");
+            }
+        }
+
+        private void cbBearbeiten_CheckedChanged(object sender, EventArgs e)
+        {
+            if ((cbNeu.Checked == true && cbBearbeiten.Checked == true) || (cbBearbeiten.Checked == true && cbLoeschen.Checked == true))
+            {
+                MessageBox.Show("Sie können nur einen Aktion auswählen", "Information");
+            }
+        }
+
+        private void cbLoeschen_CheckedChanged(object sender, EventArgs e)
+        {
+            if ((cbLoeschen.Checked == true && cbBearbeiten.Checked == true) || (cbBearbeiten.Checked == true && cbLoeschen.Checked == true))
+            {
+                MessageBox.Show("Sie können nur einen Aktion auswählen", "Information");
             }
         }
     }

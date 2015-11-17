@@ -41,18 +41,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbVorname = new System.Windows.Forms.TextBox();
+            this.tbAdresse = new System.Windows.Forms.TextBox();
+            this.tbTelefon = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.btSave = new System.Windows.Forms.Button();
             this.cbNeu = new System.Windows.Forms.CheckBox();
             this.cbBearbeiten = new System.Windows.Forms.CheckBox();
-            this.cbloeschen = new System.Windows.Forms.CheckBox();
-            this.btnSpeichern = new System.Windows.Forms.Button();
-            this.lbname = new System.Windows.Forms.Label();
-            this.lbVorname = new System.Windows.Forms.Label();
-            this.lbAdresse = new System.Windows.Forms.Label();
-            this.lbTelefon = new System.Windows.Forms.Label();
-            this.lbEMail = new System.Windows.Forms.Label();
-            this.pbBild = new System.Windows.Forms.PictureBox();
+            this.cbLoeschen = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBild)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -116,7 +114,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 242);
+            this.label2.Location = new System.Drawing.Point(41, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 2;
@@ -126,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 293);
+            this.label3.Location = new System.Drawing.Point(41, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 3;
@@ -136,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 352);
+            this.label4.Location = new System.Drawing.Point(41, 321);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 20);
             this.label4.TabIndex = 4;
@@ -146,7 +144,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(322, 242);
+            this.label5.Location = new System.Drawing.Point(321, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 20);
             this.label5.TabIndex = 5;
@@ -156,7 +154,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(322, 293);
+            this.label6.Location = new System.Drawing.Point(321, 262);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 20);
             this.label6.TabIndex = 6;
@@ -166,19 +164,65 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(322, 352);
+            this.label7.Location = new System.Drawing.Point(321, 321);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 20);
             this.label7.TabIndex = 7;
             this.label7.Text = "Bild";
             // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(143, 211);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(130, 20);
+            this.tbName.TabIndex = 8;
+            // 
+            // tbVorname
+            // 
+            this.tbVorname.Location = new System.Drawing.Point(143, 262);
+            this.tbVorname.Name = "tbVorname";
+            this.tbVorname.Size = new System.Drawing.Size(130, 20);
+            this.tbVorname.TabIndex = 9;
+            // 
+            // tbAdresse
+            // 
+            this.tbAdresse.Location = new System.Drawing.Point(143, 321);
+            this.tbAdresse.Multiline = true;
+            this.tbAdresse.Name = "tbAdresse";
+            this.tbAdresse.Size = new System.Drawing.Size(130, 159);
+            this.tbAdresse.TabIndex = 10;
+            // 
+            // tbTelefon
+            // 
+            this.tbTelefon.Location = new System.Drawing.Point(410, 213);
+            this.tbTelefon.Name = "tbTelefon";
+            this.tbTelefon.Size = new System.Drawing.Size(130, 20);
+            this.tbTelefon.TabIndex = 11;
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.Location = new System.Drawing.Point(410, 264);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(130, 20);
+            this.tbEmail.TabIndex = 12;
+            // 
+            // btSave
+            // 
+            this.btSave.Location = new System.Drawing.Point(472, 491);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(117, 70);
+            this.btSave.TabIndex = 13;
+            this.btSave.Text = "Speichern";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
+            // 
             // cbNeu
             // 
             this.cbNeu.AutoSize = true;
-            this.cbNeu.Location = new System.Drawing.Point(326, 449);
+            this.cbNeu.Location = new System.Drawing.Point(322, 491);
             this.cbNeu.Name = "cbNeu";
             this.cbNeu.Size = new System.Drawing.Size(121, 17);
-            this.cbNeu.TabIndex = 8;
+            this.cbNeu.TabIndex = 14;
             this.cbNeu.Text = "neuen Satz anlegen";
             this.cbNeu.UseVisualStyleBackColor = true;
             this.cbNeu.CheckedChanged += new System.EventHandler(this.cbNeu_CheckedChanged);
@@ -186,107 +230,39 @@
             // cbBearbeiten
             // 
             this.cbBearbeiten.AutoSize = true;
-            this.cbBearbeiten.Location = new System.Drawing.Point(326, 472);
+            this.cbBearbeiten.Location = new System.Drawing.Point(322, 519);
             this.cbBearbeiten.Name = "cbBearbeiten";
             this.cbBearbeiten.Size = new System.Drawing.Size(100, 17);
-            this.cbBearbeiten.TabIndex = 9;
+            this.cbBearbeiten.TabIndex = 15;
             this.cbBearbeiten.Text = "Satz bearbeiten";
             this.cbBearbeiten.UseVisualStyleBackColor = true;
+            this.cbBearbeiten.CheckedChanged += new System.EventHandler(this.cbBearbeiten_CheckedChanged);
             // 
-            // cbloeschen
+            // cbLoeschen
             // 
-            this.cbloeschen.AutoSize = true;
-            this.cbloeschen.Location = new System.Drawing.Point(326, 495);
-            this.cbloeschen.Name = "cbloeschen";
-            this.cbloeschen.Size = new System.Drawing.Size(87, 17);
-            this.cbloeschen.TabIndex = 10;
-            this.cbloeschen.Text = "Satz löschen";
-            this.cbloeschen.UseVisualStyleBackColor = true;
-            // 
-            // btnSpeichern
-            // 
-            this.btnSpeichern.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSpeichern.Location = new System.Drawing.Point(470, 449);
-            this.btnSpeichern.Name = "btnSpeichern";
-            this.btnSpeichern.Size = new System.Drawing.Size(114, 63);
-            this.btnSpeichern.TabIndex = 11;
-            this.btnSpeichern.Text = "Speichern";
-            this.btnSpeichern.UseVisualStyleBackColor = true;
-            this.btnSpeichern.Click += new System.EventHandler(this.btnSpeichern_Click);
-            // 
-            // lbname
-            // 
-            this.lbname.AutoSize = true;
-            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbname.Location = new System.Drawing.Point(136, 242);
-            this.lbname.Name = "lbname";
-            this.lbname.Size = new System.Drawing.Size(40, 20);
-            this.lbname.TabIndex = 12;
-            this.lbname.Text = "Test";
-            // 
-            // lbVorname
-            // 
-            this.lbVorname.AutoSize = true;
-            this.lbVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVorname.Location = new System.Drawing.Point(136, 293);
-            this.lbVorname.Name = "lbVorname";
-            this.lbVorname.Size = new System.Drawing.Size(40, 20);
-            this.lbVorname.TabIndex = 13;
-            this.lbVorname.Text = "Test";
-            // 
-            // lbAdresse
-            // 
-            this.lbAdresse.AutoSize = true;
-            this.lbAdresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAdresse.Location = new System.Drawing.Point(136, 352);
-            this.lbAdresse.Name = "lbAdresse";
-            this.lbAdresse.Size = new System.Drawing.Size(40, 20);
-            this.lbAdresse.TabIndex = 14;
-            this.lbAdresse.Text = "Test";
-            // 
-            // lbTelefon
-            // 
-            this.lbTelefon.AutoSize = true;
-            this.lbTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTelefon.Location = new System.Drawing.Point(407, 242);
-            this.lbTelefon.Name = "lbTelefon";
-            this.lbTelefon.Size = new System.Drawing.Size(40, 20);
-            this.lbTelefon.TabIndex = 15;
-            this.lbTelefon.Text = "Test";
-            // 
-            // lbEMail
-            // 
-            this.lbEMail.AutoSize = true;
-            this.lbEMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEMail.Location = new System.Drawing.Point(407, 293);
-            this.lbEMail.Name = "lbEMail";
-            this.lbEMail.Size = new System.Drawing.Size(40, 20);
-            this.lbEMail.TabIndex = 16;
-            this.lbEMail.Text = "Test";
-            // 
-            // pbBild
-            // 
-            this.pbBild.Location = new System.Drawing.Point(411, 352);
-            this.pbBild.Name = "pbBild";
-            this.pbBild.Size = new System.Drawing.Size(149, 80);
-            this.pbBild.TabIndex = 17;
-            this.pbBild.TabStop = false;
+            this.cbLoeschen.AutoSize = true;
+            this.cbLoeschen.Location = new System.Drawing.Point(322, 544);
+            this.cbLoeschen.Name = "cbLoeschen";
+            this.cbLoeschen.Size = new System.Drawing.Size(87, 17);
+            this.cbLoeschen.TabIndex = 16;
+            this.cbLoeschen.Text = "Satz löschen";
+            this.cbLoeschen.UseVisualStyleBackColor = true;
+            this.cbLoeschen.CheckedChanged += new System.EventHandler(this.cbLoeschen_CheckedChanged);
             // 
             // Kontakt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 553);
-            this.Controls.Add(this.pbBild);
-            this.Controls.Add(this.lbEMail);
-            this.Controls.Add(this.lbTelefon);
-            this.Controls.Add(this.lbAdresse);
-            this.Controls.Add(this.lbVorname);
-            this.Controls.Add(this.lbname);
-            this.Controls.Add(this.btnSpeichern);
-            this.Controls.Add(this.cbloeschen);
+            this.ClientSize = new System.Drawing.Size(664, 585);
+            this.Controls.Add(this.cbLoeschen);
             this.Controls.Add(this.cbBearbeiten);
             this.Controls.Add(this.cbNeu);
+            this.Controls.Add(this.btSave);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbTelefon);
+            this.Controls.Add(this.tbAdresse);
+            this.Controls.Add(this.tbVorname);
+            this.Controls.Add(this.tbName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -299,7 +275,6 @@
             this.Text = "Kontakt";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Kontakt_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBild)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,15 +295,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefon;
         private System.Windows.Forms.DataGridViewTextBoxColumn EMail;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.TextBox tbVorname;
+        private System.Windows.Forms.TextBox tbAdresse;
+        private System.Windows.Forms.TextBox tbTelefon;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.CheckBox cbNeu;
         private System.Windows.Forms.CheckBox cbBearbeiten;
-        private System.Windows.Forms.CheckBox cbloeschen;
-        private System.Windows.Forms.Button btnSpeichern;
-        private System.Windows.Forms.Label lbname;
-        private System.Windows.Forms.Label lbVorname;
-        private System.Windows.Forms.Label lbAdresse;
-        private System.Windows.Forms.Label lbTelefon;
-        private System.Windows.Forms.Label lbEMail;
-        private System.Windows.Forms.PictureBox pbBild;
+        private System.Windows.Forms.CheckBox cbLoeschen;
     }
 }
